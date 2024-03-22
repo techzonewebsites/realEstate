@@ -3908,41 +3908,60 @@ only screen and (max-device-width: 767px) {
 /*# sourceMappingURL=style.css.map */
 
 
-.imgContainer{
+.imgContainer {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.imgContainer div{
-  width: 43%;
+@media (min-width: 850px) {
+  .imgContainer {
+    flex-direction: row !important;
+  }
+
+  .imgContainer div {
+    width: 43% !important;
+  }
+
+  .imgContainer img {
+    width: 50% !important;
+    height: 500px !important;
+    object-fit: cover;
+    margin-top: 0px !important;
+  }
 }
 
-.imgContainer div h1{
+.imgContainer div {
+  width: 100%;
+}
+
+.imgContainer div h1 {
   font-weight: 500 !important;
   font-size: 55px;
 }
 
-.imgContainer div p{
+.imgContainer div p {
   color: gray;
   margin-top: 20px;
 }
 
-.imgContainer img{
-  width: 50%;
+.imgContainer img {
+  width: 90%;
   height: 500px !important;
   object-fit: cover;
+  margin-top: 20px;
 }
 
-.drawingBg{
+.drawingBg {
   margin-top: 70px;
   margin-bottom: 40px;
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://res.cloudinary.com/luxuryp/images/w_1920,c_limit,f_auto,q_auto/vvsyzavx9k4eera89bvp/wwu);
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../images/drawingRoom.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: center;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -3952,12 +3971,12 @@ only screen and (max-device-width: 767px) {
   color: white;
 }
 
-.drawingBg h1{
+.drawingBg h1 {
   font-size: 55px;
   margin-bottom: 25px;
 }
 
-.drawingBg a{
+.drawingBg a {
   height: 50px;
   background-color: transparent;
   margin-top: 25px;
@@ -3971,7 +3990,7 @@ only screen and (max-device-width: 767px) {
   font-weight: 600;
 }
 
-.drawingBg a:hover{
+.drawingBg a:hover {
   background-color: white;
   color: #9F8054;
 }
@@ -4261,7 +4280,8 @@ form {
   box-shadow: 0 8px 30px -7px #c9dff0;
   border-radius: 20px;
 }
-form >h4 {
+
+form>h4 {
   color: #9F8054;
   font-size: xx-large;
 }
@@ -4284,7 +4304,7 @@ form >h4 {
   margin-bottom: 40px;
 }
 
-.propertyManagement{
+.propertyManagement {
   margin-top: 120px;
   margin-bottom: 60px;
 }
