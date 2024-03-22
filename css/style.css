@@ -3908,7 +3908,73 @@ only screen and (max-device-width: 767px) {
 /*# sourceMappingURL=style.css.map */
 
 
+.imgContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.imgContainer div{
+  width: 43%;
+}
+
+.imgContainer div h1{
+  font-weight: 500 !important;
+  font-size: 55px;
+}
+
+.imgContainer div p{
+  color: gray;
+  margin-top: 20px;
+}
+
+.imgContainer img{
+  width: 50%;
+  height: 500px !important;
+  object-fit: cover;
+}
+
+.drawingBg{
+  margin-top: 70px;
+  margin-bottom: 40px;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://res.cloudinary.com/luxuryp/images/w_1920,c_limit,f_auto,q_auto/vvsyzavx9k4eera89bvp/wwu);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.drawingBg h1{
+  font-size: 55px;
+  margin-bottom: 25px;
+}
+
+.drawingBg a{
+  height: 50px;
+  background-color: transparent;
+  margin-top: 25px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid white;
+  font-weight: 600;
+}
+
+.drawingBg a:hover{
+  background-color: white;
+  color: #9F8054;
+}
 
 .imgCont {
   display: flex !important;
@@ -4216,6 +4282,11 @@ form >h4 {
 .Sell {
   margin-top: 80px;
   margin-bottom: 40px;
+}
+
+.propertyManagement{
+  margin-top: 120px;
+  margin-bottom: 60px;
 }
 
 .Sell>.container>p {
