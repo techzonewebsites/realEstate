@@ -2654,6 +2654,7 @@ button[type=submit] {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  gap: 15px;
   align-items: center;
   border: 1px solid #eee;
   margin: 15px 0;
@@ -2661,6 +2662,8 @@ button[type=submit] {
 
 .sales-team figure img {
   width: 50%;
+  height: 300px;
+  object-fit: cover !important;
   display: inline-block;
 }
 
@@ -2699,9 +2702,19 @@ button[type=submit] {
 }
 
 .sales-team figure figcaption ul {
-  display: block;
-  margin: 0;
+  display: flex;
+  flex-direction: column !important;
+  gap: 8px;
+  margin-bottom: 40px;
   padding: 0;
+}
+
+.sales-team figure figcaption a {
+  text-decoration: none;
+}
+
+.sales-team figure figcaption a:hover {
+  color: #9f8054;
 }
 
 .sales-team figure figcaption ul li {
@@ -2710,6 +2723,12 @@ button[type=submit] {
   margin-right: 15px;
   padding: 0;
   list-style: none;
+}
+
+.sales-team figure figcaption ul li img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
 }
 
 .sales-team figure figcaption ul li a {
@@ -4304,15 +4323,83 @@ form>h4 {
   margin-bottom: 40px;
 }
 
-.propertyManagement {
+.propertyManagement,
+.salesTeam {
   margin-top: 120px;
   margin-bottom: 60px;
+}
+
+.salesTeam .container {
+  height: fit-content !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #9F8054;
+}
+
+.salesTeam .container .imgWrap {
+  flex: 0.2;
+}
+
+.salesTeam .container .imgWrap img {
+  height: 400px;
+  object-fit: contain;
+}
+
+.salesTeam .container .content {
+  flex: 0.75;
+}
+
+.salesTeam .container .content h1 {
+  margin-bottom: 0;
+}
+
+.salesTeam .container .content h1 span {
+  color: #9F8054;
+}
+
+.salesTeam .container .content small {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.5;
+}
+
+.salesTeam .container .content p {
+  color: gray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  font-size: 15px;
+}
+
+.salesTeam .container .info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+  list-style-type: none;
+  align-items: center;
+}
+.salesTeam .container .info li img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
 }
 
 .Sell>.container>p {
   font-size: large;
   text-align: center;
   color: #9F8054;
+}
+
+@media (min-width: 768px) {
+  .salesTeam .container{
+    flex-direction: row !important;
+  }
 }
 
 /* carousel */
